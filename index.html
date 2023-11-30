@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Web về môi trường</title>
+  <style>
+    body {
+      font-family:Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #f2f2f2;
+      padding: 0px;
+      text-align: center;
+      font-size: 20px;
+      color: chartreuse;
+      margin: 0px;
+    }
+    nav {
+      background-color:cyan;
+      color: white;
+      text-align: center;
+      padding: 0px;
+      width: 1400px;
+      height: 50px;
+      font-size: 17px;
+    }
+    .section {
+      display: flex;
+      padding: 0px;
+    }
+    footer {
+        background-color: #f2f2f2;
+  padding: 0px;
+  text-align: center;
+  position: relative;
+  margin-top: auto; /* Sửa từ giá trị cũ thành auto */
+  width: 1400px;
+      
+    }
+    .column {
+      flex: 1;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+    }
+    .container1 {
+       /* Thay đổi tỉ lệ để điều chỉnh kích thước cột */
+      padding: 0px;
+      margin: auto;
+      border: 2px solid brown;
+      height: 900px;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 1400px;
+    }
+    .container2 {
+        /* Thay đổi tỉ lệ để điều chỉnh kích thước cột */
+      padding: 0px;
+      margin: 0px;
+      border: 2px solid brown;
+      height: 704px;
+      width: 900px;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      display: flex;
+    }
+    .content {
+      text-align: center;
+    }
+    .external1-image {
+      background-image: url(image/f.jpg);
+      width: 150px; /* Đặt chiều rộng đầy đủ */
+      padding: 20px;
+      border: 2px solid black;
+      margin: 10px 0;
+      height: 600px; /* Tạo khoảng cách với các phần tử khác */
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .external2-image {
+      background-image: url(image/f.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 150px; /* Đặt chiều rộng đầy đủ */
+      padding: 20px;
+      border: 2px solid black;
+      margin: 10px 0; /* Tạo khoảng cách với các phần tử khác */
+      height: 600px;
+    }
+    .external3-image {
+      background-image: url(image/c.jpg);
+      width: 200px; /* Đặt chiều rộng đầy đủ */
+      padding: 20px;
+      border: 2px solid black;
+      margin: 10px 0; /* Tạo khoảng cách với các phần tử khác */
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100px;
+      font-size: 14px;
+    }
+    .external4-image {
+      background-image: url(image/d.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 200px; /* Đặt chiều rộng đầy đủ */
+      padding: 20px;
+      border: 2px solid black;
+      margin: 10px 0; /* Tạo khoảng cách với các phần tử khác */
+      height: 100px;
+      font-size: 14px;
+    }
+    .figma-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #6C63FF;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.figma-button:hover {
+  background-color: #544BD2;
+}
+  </style>
+</head>
+<body>
+  <div class="container1">
+    <header>
+      <h1>Website về môi trường </h1>
+    </header>
+
+    <nav>
+      <a href="#">Trang Chủ</a> |
+      <a href="#">Lưu trữ</a> |
+      <a href="#">About</a> |
+      <a href="#">Liên Hệ</a> |
+      <a href="#" id="user_scenario">User Scenario</a> 
+    </nav>
+
+    <div class="section">
+      <div class="external1-image"></div>
+
+      <div class="container2">
+        <div class="content">
+            <h2>Nội dung chính</h2>
+            <p>Đây là nội dung chính của trang web</p>
+          </div>
+        <div class="external3-image"></div>
+        <p>Môi trường đang phải đối mặt với nhiều nguy cơ nguy hại, bao gồm sự ô nhiễm không khí,</br>
+           nước và đất đai, sự suy giảm đa dạng sinh học và biến đổi khí hậu. Những vấn đề này </br>
+           không chỉ ảnh hưởng đến sức khỏe con người mà còn gây ra sự suy giảm nghiêm trọng</br>
+            trong hệ sinh thái toàn cầu.</p>
+        <div class="external4-image"></div>
+        <p>Để bảo vệ môi trường, con người có thể thực hiện những hành động sau:</br>
+
+          Giảm thải rác và tái chế để giảm ô nhiễm môi trường.</br>
+          Sử dụng năng lượng tái tạo và công nghệ xanh để giảm lượng khí thải gây hiệu ứng nhà kính.</br>
+          Bảo vệ đa dạng sinh học và duy trì sử dụng bền vững tài nguyên tự nhiên.</p>
+      </div>
+
+      <div class="external2-image"></div>
+    </div>
+    <div id="tabContent" style="display:none;">
+     <p>(1) User Scenario</p>
+      
+      
+      <img src="image/a.jpg" alt="(2)">
+  
+      <p>(2)Figma</p>
+      <a href="https://www.figma.com/file/c8HOoInKg4nbUsX1JLrjMq/Website-v%E1%BB%81-m%C3%B4i-tr%C6%B0%E1%BB%9Dng?type=design&node-id=0%3A1&mode=design&t=W1HZjVzVCyRMr7GQ-1" target="_blank" class="figma-button">Go to Figma</a>
+    </div>
+    <footer>
+      <p>Phan Xuân Lãnh  &copy; 2023</p>
+    </footer>
+    
+    <script>
+      document.getElementById("user_scenario").addEventListener("click", function() {
+        document.querySelector(".section").style.display = "none";
+        document.getElementById("tabContent").style.display = "block";
+      });
+    </script>
+  </div>
+</body>
+</html>
